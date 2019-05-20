@@ -13,6 +13,19 @@ body {
   overflow-x: hidden;
 }
 
+.google-maps {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 500px;
+}
+
+
+.site-footer {
+  background: #f0f0f0;
+}
+
+
 textarea {
   font-family: "Open Sans", sans-serif;
 }
@@ -67,11 +80,11 @@ p:last-child {
 
 .tm-nav-section {
   position: absolute;
-  top: 158px;
+  top: 188px;
   left: 0;
   width: 100%;
-  border-top: 1px solid #909090;
-  border-bottom: 1px solid #909090;
+  border-top: 2px solid #909090;
+  border-bottom: 2px solid #909090;
   background-color: white;
   z-index: 3000;
 }
