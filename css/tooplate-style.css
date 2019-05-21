@@ -78,9 +78,8 @@ p:last-child {
   padding: 45px;
 }
 
-.tm-nav-section {
-  position: absolute;
-  top: 188px;
+.tm-nav-section {  
+  position: relative;  
   left: 0;
   width: 100%;
   border-top: 2px solid #909090;
