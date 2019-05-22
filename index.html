@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Favicon-->
-	  <link rel="shortcut icon" href="img/redheart.png">
+	  <link rel="shortcut icon" href="img/NewPLLogo512.png">
     <!--title>Pro Line - Bootstrap v4.1.3 Template</title-->
     <title>Portable Biomed. Lab</title>
     <link
@@ -32,7 +32,7 @@ http://www.tooplate.com/view/2111-pro-line
         <div class="tm-page-header">
           <!--i class="fas fa-4x fa-chart-bar mr-4"></i-->
           <!--i class="fas fa-4x fa-mobile-alt mr-4"></i-->
-          <a href="index.html"><img src="img/PZ_small.png" alt="MH" title="MH"/></a>          
+          <a href="index.html"><img src="img/NewPLLogo153.png" alt="MH" title="MH"/></a>     <!--PZ_small.png-->     
           <h1 class="d-inline-block">              
             Portable Biomedicine Innovation Laboratory
             <br>
@@ -288,7 +288,7 @@ http://www.tooplate.com/view/2111-pro-line
 
         <h3><b>Principal Investigators</b></h3>
         <ul style="list-style-type:disc;">
-            <li><a href = "https://bioelectric-bioenergetic-lab.net.technion.ac.il/">Assist. Prof. Yael Yaniv</a></li>
+            <li><a href = "https://bioelectric-bioenergetic-lab.net.technion.ac.il/">Assoc. Prof. Yael Yaniv</a></li>
             <li><a href = "https://aim-lab.github.io/index.html">Assist. Prof. Joachim A. Behar</a></li>            
             <li><a href = "http://sznitmanlab.net.technion.ac.il/">Assoc. Prof. Josue Sznitman</a></li>            
         </ul>
@@ -434,12 +434,17 @@ http://www.tooplate.com/view/2111-pro-line
             <header>
               <h2 class="tm-contact-header">Contact Us</h2>
             </header>
-            <form action="mailto:sashaa@netgw.com" class="tm-contact-form" method="POST" enctype="text/plain">
-              <div class="form-group">
+            <!--form class="tm-contact-form" encrypt="text/plain" name="gform" id="gform"
+            action="https://docs.google.com/forms/d/e/1FAIpQLScMFjEPKamBwz6w1_qqbZxtvi3q3xIsfqlTvEKl4og6ytTsfA/viewform?usp=pp_url&entry.217944265=Name&entry.341082721=Email&entry.1554574829=Message" target="hidden_iframe" onsubmit="submitted=true;"-->
+
+            
+            <form name="gform" id="gform" encrypt="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScMFjEPKamBwz6w1_qqbZxtvi3q3xIsfqlTvEKl4og6ytTsfA/formResponse?usp=pp_url&entry.217944265=Name&entry.341082721=Email&entry.1554574829=Message" target="hidden_iframe" onsubmit="submitted=true;">
+
+            <div class="form-group">
                 <input
                   type="text"
-                  id="contact_name"
-                  name="contact_name"
+                  id="entry.217944265"
+                  name="entry.217944265"
                   class="form-control"
                   placeholder="Name"
                   required
@@ -448,8 +453,8 @@ http://www.tooplate.com/view/2111-pro-line
               <div class="form-group">
                 <input
                   type="email"
-                  id="contact_email"
-                  name="contact_email"
+                  id="entry.341082721"
+                  name="entry.341082721"
                   class="form-control"
                   placeholder="Email"
                   required
@@ -458,8 +463,8 @@ http://www.tooplate.com/view/2111-pro-line
               <div class="form-group">
                 <textarea
                   rows="5"
-                  id="contact_message"
-                  name="contact_message"
+                  id="entry.1554574829"
+                  name="entry.1554574829"
                   class="form-control"
                   placeholder="Message"
                   required
@@ -471,6 +476,7 @@ http://www.tooplate.com/view/2111-pro-line
                 </button>
               </div>
             </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
           </div>
         </div>
         
@@ -694,6 +700,16 @@ http://www.tooplate.com/view/2111-pro-line
         });
       });
     </script>
+    
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+        $('#gform *').fadeOut(2000);
+        $('#gform').prepend('Your submission has been processed...');
+        });
+    </script>
+
+
   </body>
   <footer class="site-footer">
       <section class="uza-services-area section-padding-80-0">
